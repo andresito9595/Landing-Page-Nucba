@@ -25,36 +25,67 @@
       <div class="navbar">
         <nav class="navbar__Nav">
           <ul class="nav__links">
-            <li><a href="">INICIO</a></li>
-            <li><a href="">DOWNLOAD BOOKS</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">REDES SOCIALES</a></li>
+            <li><a href="#Inicio">INICIO</a></li>
+            <li><a href="#DOWNLOAD BOOKS">DOWNLOAD BOOKS</a></li>
+            <li><a href="#ABOUT">ABOUT</a></li>
+            <li><a href="#REDES">REDES SOCIALES</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <section class="portada">
-      <div class="portada__div">
-        <div class="div_izquierda">
-          <h2>Aprender Japones Ahora Es Mas Facil</h2>
-          <p>
-            Descarga nuestros libro disponibles para aprender de una manera
-            facil y didactica.
-          </p>
-          <div class="buttons_portada">
-            <button type="button"><a href="#">Download Books</a></button>
-            <button type="button"><a href="#">Japanese Test</a></button>
+    <main>
+      <section class="portada sections">
+        <div class="portada__div">
+          <div class="div_InfoHero">
+            <h2>Aprender Japones Ahora Es Mas Facil</h2>
+            <p>
+              Descarga nuestros libro disponibles para aprender de una manera
+              facil y didactica.
+            </p>
+            <div class="buttons__Portada">
+              <a class="portada__Btn btn__Primary" href="#">Download Books</a>
+              <a class="portada__Btn btn__Secondary" href="#">Japanese Test</a>
+            </div>
+          </div>
+
+          <img
+            src="./Img/Japanese_icon_(for_user_box).svg.png"
+            alt=""
+            class="div__Img"
+          />
+        </div>
+      </section>
+      <section class="section__TextoInfo sections">
+        <div class="section__Texto">
+          <h2>NO PIERDAS MAS TIEMPO</h2>
+          <h4>
+            Les traigo estos libros tan dificiles de conseguir por internet !
+            Esenciales para Autodidactas que quieren aprender Japones !
+          </h4>
+        </div>
+      </section>
+      <section class="section__Cards sections" id="BOOKS">
+        <div class="div__Cards">
+          <div class="card">
+            <img src="Img/sign1.png" alt="" />
+            <h2>JLPT N5</h2>
+            <h3>Libros del Primer Nivel</h3>
+            <a href="#">Download Books</a>
+          </div>
+          <div class="card">
+            <img src="Img/sign2.png" alt="" />
+            <h2>JLPT N4</h2>
+            <h3>Libros del Seguno Nivel</h3>
+            <a href="#">Download Books</a>
+          </div>
+          <div class="card">
+            <img src="./Img/sign3.png" alt="" />
+            <h2>JLPT N3</h2>
+            <h3>Libros del Tercer Nivel</h3>
+            <a href="#">Download Books</a>
           </div>
         </div>
-        <div class="div_derecha-img">
-          <img src="./Img/_multilingual4567741280_d883d9b1.png" alt="" />
-        </div>
-      </div>
-    </section>
-    <section class="section__textoInfo">
-      <div class="textoInfo">
-        <h2>NO PIERDAS TIEMPO !</h2>
-      </div>
-    </section>
+      </section>
+    </main>
   </body>
 </html>
