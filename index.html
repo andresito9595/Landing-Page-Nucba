@@ -1,18 +1,36 @@
 <!DOCTYPE html>
+
+<!-- 👉 Debe contener un navbar que navegue las diversas secciones de la web.
+👉 Debe contener una portada alusiva a la temática de nuestra app.
+👉 Una sección de imágenes.
+👉 Una sección de contacto.
+👉 Un footer.
+👉 Una página para loguearse.
+👉 Una página para registrarse.
+👉 Ser responsive.
+👉 Estar deployado en vercel.  -->
+
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landind Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Minna No Nihongo</title>
+    <link href="http://fonts.cdnfonts.com/css/montserrat" rel="stylesheet" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="shortcut icon"
+      href="./Img/akatsuki-nube-logo-51123688B2-seeklogo.com.png"
+      type="image/x-icon"
+    />
+
     <link rel="stylesheet" href="./Normalize/normalize.css" />
+
+    <link rel="stylesheet" href="index.css" />
     <script src="./index.js"></script>
     <script
       src="https://kit.fontawesome.com/db8e897e08.js"
@@ -21,87 +39,126 @@
   </head>
   <body>
     <header>
-      <div class="imagen-portada">
-        <img src="./Img/26e9.png" alt="" />
-        <img src="./Img/mask.png" alt="" />
-        <img src="./Img/Luna.png" alt="" />
+      <div class="header__imgs">
+        <img src="./Img/26e9.png" alt="" class="header__img" />
+        <img src="./Img/mask.png" alt="" class="header__img" />
+        <img src="./Img/Luna.png" alt="" class="header__img" />
       </div>
-      <div class="navbar">
-        <nav class="navbar__Nav">
-          <ul class="nav__links">
-            <li><a href="#Inicio">INICIO</a></li>
-            <li><a href="#DOWNLOAD BOOKS">DOWNLOAD BOOKS</a></li>
-            <li><a href="#ABOUT">ABOUT</a></li>
-            <li><a href="#CONTACT_US">REDES SOCIALES</a></li>
-          </ul>
-        </nav>
-      </div>
+
+      <nav class="hidden-nav">
+        <label for="menu-toggle">
+          <div class="hidden-nav__div"><i class="fa-solid fa-bars"></i></div>
+        </label>
+        <input type="checkbox" id="menu-toggle" class="nav__menu-toggle" />
+        <ul class="hidden-nav__links">
+          <li><a href="#Inicio" class="hidden-nav__item">INICIO</a></li>
+          <li>
+            <a href="#DOWNLOAD BOOKS" class="hidden-nav__item"
+              >DOWNLOAD BOOKS</a
+            >
+          </li>
+
+          <li><a href="#ABOUT" class="hidden-nav__item">ABOUT</a></li>
+          <li>
+            <a href="#CONTACT_US" class="hidden-nav__item">REDES SOCIALES</a>
+          </li>
+
+          <li>
+            <a class="hidden-nav__item hidden-nav__item--intro" href="#register"
+              >Register</a
+            >
+          </li>
+          <li>
+            <a class="hidden-nav__item hidden-nav__item--intro" href="#login"
+              >Login</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="nav">
+        <ul class="nav__links">
+          <li><a href="#Inicio" class="nav__item">INICIO</a></li>
+          <li>
+            <a href="#DOWNLOAD BOOKS" class="nav__item">DOWNLOAD BOOKS</a>
+          </li>
+
+          <li><a href="#ABOUT" class="nav__item">ABOUT</a></li>
+          <li><a href="#CONTACT_US" class="nav__item">REDES SOCIALES</a></li>
+        </ul>
+        <ul class="nav__links">
+          <li><a href="#register">Register</a></li>
+          <li><a href="#login">Login</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <section class="portada sections">
-        <div class="portada__div">
-          <div class="div_InfoHero">
-            <h2>Aprender Japones Ahora Es Mas Facil</h2>
-            <p>
+      <section class="hero">
+        <div class="hero__container-portada">
+          <div class="hero__portada">
+            <h2 class="hero__title">Aprender Japones YA</h2>
+            <p class="hero__parrafo">
               Descarga nuestros libro disponibles para aprender de una manera
               facil y didactica.
             </p>
-            <div class="buttons__Portada">
-              <a class="portada__Btn btn__Primary" href="#">Download Books</a>
-              <a class="portada__Btn btn__Secondary" href="#">Japanese Test</a>
+            <div class="hero__links-btn">
+              <a class="hero__btn hero__btn--color" href="#">Download Books</a>
+              <a class="hero__btn" href="#">Japanese Test</a>
             </div>
           </div>
 
           <img
-            src="./Img/Japanese_icon_(for_user_box).svg.png"
+            src="./Img/Japasnese_icon_(for_user_box).svg.png"
             alt=""
-            class="div__Img"
+            class="hero__img"
           />
         </div>
       </section>
-      <section class="section__TextoInfo sections">
-        <div class="section__Texto">
-          <h2>NO PIERDAS MAS TIEMPO</h2>
-          <h4>
+      <section class="cards" id="BOOKS">
+        <div class="cards__texto">
+          <h2 class="cards__h2">NO PIERDAS MAS TIEMPO !</h2>
+          <h4 class="cards__parrafo">
             Les traigo estos libros tan dificiles de conseguir por internet,
             esenciales para Autodidactas que quieren aprender Japones...
           </h4>
         </div>
-      </section>
-      <section class="section__Cards sections" id="BOOKS">
-        <h2 class="section__Cards-h2" id="DOWNLOAD BOOKS">DESCARGAS</h2>
-        <div class="div__Cards">
-          <div class="card">
-            <img src="Img/sign1.png" alt="" />
-            <h2>JLPT N5</h2>
-            <h3>Libros del <span>Primer Nivel</span></h3>
-            <a href="#">Download Books</a>
+        <h2 class="cards__title-download" id="DOWNLOAD BOOKS">DESCARGAS</h2>
+        <div class="cards__container">
+          <div class="cards__card">
+            <img src="Img/sign1.png" alt="" class="cards__img" />
+            <h2 class="cards__h2card">JLPT N5</h2>
+            <h3 class="cards__h3card">Libros del <span>Primer Nivel</span></h3>
+            <a class="cards__btn-link" href="#">Download Books</a>
           </div>
-          <div class="card">
-            <img src="Img/sign2.png" alt="" />
-            <h2>JLPT N4</h2>
-            <h3>Libros del <span>Segundo Nivel</span></h3>
-            <a href="#">Download Books</a>
+          <div class="cards__card">
+            <img src="Img/sign2.png" alt="" class="cards__img" />
+            <h2 class="cards__h2card">JLPT N4</h2>
+            <h3 class="cards__h3card">Libros del <span>Segundo Nivel</span></h3>
+            <a class="cards__btn-link" href="#">Download Books</a>
           </div>
-          <div class="card">
-            <img src="./Img/sign3.png" alt="" />
-            <h2>JLPT N3</h2>
-            <h3>Libros del <span>Tercer Nivel</span></h3>
-            <a href="#">Download Books</a>
+          <div class="cards__card">
+            <img src="./Img/sign3.png" alt="" class="cards__img" />
+            <h2 class="cards__h2card">JLPT N3</h2>
+            <h3 class="cards__h3card">Libros del <span>Tercer Nivel</span></h3>
+            <a class="cards__btn-link" href="#">Download Books</a>
           </div>
         </div>
       </section>
-      <section class="contact sections" id="CONTACT_US">
+      <section class="contact" id="CONTACT_US">
         <div class="contact__Container">
           <div class="contact__Info">
-            <h2>CONTACT US</h2>
-            <h3>Mercado Daniel Andres</h3>
-            <p>
+            <h2 class="contact__title-h2">CONTACT US</h2>
+            <h3 class="contact__name-h3">Mercado Daniel Andres</h3>
+            <p class="contact__address-p">
               <i class="fa-solid fa-location-dot"></i> Argentina, La Rioja ,
               Capital , Belgrano 640 Depto "C"
             </p>
-            <p><i class="fa-solid fa-envelope"></i> Andres95rino@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i> +54 380 4989844</p>
+            <p class="contact__email">
+              <i class="fa-solid fa-envelope"></i> Andres95rino@gmail.com
+            </p>
+            <p class="contact__tel">
+              <i class="fa-solid fa-phone"></i> +54 380 4989844
+            </p>
           </div>
           <div class="contact__map">
             <iframe
@@ -118,8 +175,12 @@
       </section>
     </main>
     <footer class="footer">
-      <img src="Img/akatsuki-nube-logo-51123688B2-seeklogo.com.png" alt="" />
-      <p>Derechos Reservados</p>
+      <img
+        class="footer__logo"
+        src="Img/akatsuki-nube-logo-51123688B2-seeklogo.com.png"
+        alt=""
+      />
+      <p class="footer__copyright">Derechos Reservados</p>
     </footer>
   </body>
 </html>
