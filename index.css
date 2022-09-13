@@ -58,14 +58,13 @@ header {
   display: flex;
   text-align: center;
   width: 100%;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
   gap: 10px;
   position: sticky;
-
   top: 0px;
   background-color: rgb(212, 103, 49);
+  height: 50px;
 }
 .fa-solid {
   font-size: 40px;
@@ -73,7 +72,23 @@ header {
 .nav__menu-toggle {
   display: none;
 }
+.nav__links-container {
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+}
 
+.nav__link {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+.nav__link-l {
+  color: #fff;
+}
+.nav__link-r {
+  color: red;
+}
 .hidden-nav__links {
   width: 100%;
 
@@ -90,10 +105,14 @@ header {
   position: absolute;
   height: 600px;
   top: 30px;
+  left: -400px;
 }
 
 .nav__menu-toggle:checked ~ .hidden-nav__links {
   display: flex;
+  transition: transform;
+  transition-duration: 3s;
+  transform: translatex(400px);
 }
 .hidden-nav__item {
   color: #000;
@@ -121,6 +140,7 @@ main {
 
 /* SECTION HERO */
 .hero {
+  display: none;
 }
 .hero__img {
   display: none;
@@ -169,8 +189,9 @@ main {
   color: rgb(255, 255, 255);
 }
 .hero__btn--color {
-  color: #eadc20;
+  color: #ffffff;
   background-color: #000000;
+  border: 2px solid rgb(228, 14, 14);
 }
 /* SECTION CARDS__BOOKS */
 .cards {
@@ -180,11 +201,19 @@ main {
   align-items: center;
 }
 .cards__texto {
-  width: 90%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.cards__h2 {
+  text-align: center;
+  margin: 20px 0px 0px 0px;
+}
+.cards__parrafo {
+  padding: 5px;
 }
 .cards__title-download {
   margin: 10px 0px;
@@ -219,17 +248,32 @@ main {
 
 /*  SECTION CONTACT US */
 .contact {
+  display: flex;
   width: 90%;
+  margin: 50px;
+  justify-content: center;
+  align-items: center;
 }
 .contact__Container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
   width: 90%;
 }
 .contact__map {
   width: 90%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .contact__map iframe {
+}
+.contact__Info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 /* FOOTER */
