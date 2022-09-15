@@ -30,7 +30,7 @@ header {
   align-items: center;
 
   margin: 0;
-  background-color: #874000;
+  background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
 }
 .header {
   width: 100%;
@@ -117,15 +117,16 @@ header {
 .hidden-nav__item {
   color: #000;
   font-size: 20px;
+  font-weight: 600;
   width: 100%;
   padding: 10px 50px;
-  background-color: #a05555;
-
+  background-image: linear-gradient(to top, #1d2b64, #f8cdda);
+  border: transparent;
   text-decoration: none;
 }
 .hidden-nav__item--intro {
   background-color: rgb(187, 62, 45);
-  color: #fffbbd;
+  color: #f20000;
   padding: 18px 50px;
 }
 /* MAIN */
@@ -216,6 +217,7 @@ main {
   padding: 5px;
 }
 .cards__title-download {
+  color: #e70909;
   margin: 10px 0px;
 }
 .cards__container {
