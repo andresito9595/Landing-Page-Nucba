@@ -17,5 +17,116 @@
     <link rel="stylesheet" href="./Normalize/normalize.css" />
     <link rel="stylesheet" href="login.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="header">
+        <img src="./Img/26e9.png" alt="" class="header__img" />
+        <h1 class="hero__title">Aprende Japones</h1>
+      </div>
+    </header>
+    <nav class="hidden-nav">
+      <label for="menu-toggle">
+        <div class="hidden-nav__div"><i class="fa-solid fa-bars"></i></div>
+      </label>
+      <input type="checkbox" id="menu-toggle" class="nav__menu-toggle" />
+      <ul class="hidden-nav__links">
+        <li><a href="#Inicio" class="hidden-nav__item">INICIO</a></li>
+        <li>
+          <a href="#DOWNLOAD BOOKS" class="hidden-nav__item">DOWNLOAD BOOKS</a>
+        </li>
+
+        <li><a href="#ABOUT" class="hidden-nav__item">ABOUT</a></li>
+        <li>
+          <a href="#CONTACT_US" class="hidden-nav__item">REDES SOCIALES</a>
+        </li>
+
+        <li>
+          <a
+            class="hidden-nav__item hidden-nav__item--intro"
+            href="./register.html"
+            >Register</a
+          >
+        </li>
+        <li>
+          <a
+            class="hidden-nav__item hidden-nav__item--intro"
+            href="./login.html"
+            >Login</a
+          >
+        </li>
+      </ul>
+      <div class="nav__links-container">
+        <a class="nav__link nav__link-l" href="./login.html">Login</a>
+        <a class="nav__link nav__link-r" href="./register.html">Register</a>
+      </div>
+    </nav>
+
+    <nav class="nav">
+      <ul class="nav__links">
+        <li><a href="#Inicio" class="nav__item">INICIO</a></li>
+        <li>
+          <a href="#DOWNLOAD BOOKS" class="nav__item">DOWNLOAD BOOKS</a>
+        </li>
+
+        <li><a href="#ABOUT" class="nav__item">ABOUT</a></li>
+        <li><a href="#CONTACT_US" class="nav__item">REDES SOCIALES</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="login">
+        <div class="login__container">
+          <form class="form">
+            <label for="usuario">User</label>
+            <input class="form__input input-user" type="text" id="usuario" />
+            <label for="usuario">Password</label>
+            <input class="form__input form__input--pass" type="text" id="password" />
+            <button class= "login__button" type="submit"></button>
+          </form>
+          <div class="olvido">
+            <p class="olvido__recuperar">Olvidaste tu nombre de Usuario ? <a href="#">Click Aqui</a></p>
+            <p class="olvido__crearUser">No tiene un Usuario? <a href="#">Crear Cuenta</a></pclass>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="CONTACT_US">
+        <div class="contact__Container">
+          <div class="contact__Info">
+            <h2 class="contact__title-h2">CONTACT US</h2>
+            <h3 class="contact__name-h3">Mercado Daniel Andres</h3>
+            <p class="contact__address-p">
+              <i class="fa-solid fa-location-dot"></i> Argentina, La Rioja ,
+              Capital , Belgrano 640 Depto "C"
+            </p>
+            <p class="contact__email">
+              <i class="fa-solid fa-envelope"></i> Andres95rino@gmail.com
+            </p>
+            <p class="contact__tel">
+              <i class="fa-solid fa-phone"></i> +54 380 4989844
+            </p>
+          </div>
+          <div class="contact__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.7669778056297!2d-66.86112588508749!3d-29.40637208211894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427dbb2553735d1%3A0x5c18f17bfd40930a!2sBelgrano%20600%2C%20La%20Rioja!5e0!3m2!1ses-419!2sar!4v1661391501615!5m2!1ses-419!2sar"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <img
+        class="footer__logo"
+        src="Img/akatsuki-nube-logo-51123688B2-seeklogo.com.png"
+        alt=""
+      />
+      <p class="footer__copyright">Derechos Reservados</p>
+    </footer>
+  </body>
 </html>
