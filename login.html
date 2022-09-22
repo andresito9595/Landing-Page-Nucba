@@ -56,8 +56,7 @@
         </li>
       </ul>
       <div class="nav__links-container">
-        <a class="nav__link nav__link-l" href="./login.html">Login</a>
-        <a class="nav__link nav__link-r" href="./register.html">Register</a>
+        
       </div>
     </nav>
 
@@ -76,22 +75,24 @@
     <main>
       <section class="login">
         <div class="login__container">
-          <form class="form">
+          <form class="login__form">
+            <h2 class="login__title">LOGIN / REGISTER</h2>
             <label for="usuario">User</label>
-            <input class="form__input input-user" type="text" id="usuario" />
+            <input class="form__input form__input--user" type="text" id="usuario" placeholder="Email" />
             <label for="usuario">Password</label>
-            <input class="form__input form__input--pass" type="text" id="password" />
-            <button class= "login__button" type="submit"></button>
+            <input class="form__input form__input--pass" type="password" id="password" placeholder="Password"/>
+            <button class= "login__button" type="submit">LOGIN</button>
+            <div class="olvido">
+              <p class="olvido__recuperar">Olvidaste tu nombre de Usuario ? <a href="#">Click Aqui</a></p>
+              <p class="olvido__crearUser">No tiene un Usuario? <a href="#">Crear Cuenta</a></pclass>
+            </div>
           </form>
-          <div class="olvido">
-            <p class="olvido__recuperar">Olvidaste tu nombre de Usuario ? <a href="#">Click Aqui</a></p>
-            <p class="olvido__crearUser">No tiene un Usuario? <a href="#">Crear Cuenta</a></pclass>
-          </div>
+          
         </div>
       </section>
 
       <section class="contact" id="CONTACT_US">
-        <div class="contact__Container">
+        <div class="contact__container">
           <div class="contact__Info">
             <h2 class="contact__title-h2">CONTACT US</h2>
             <h3 class="contact__name-h3">Mercado Daniel Andres</h3>
@@ -106,16 +107,7 @@
               <i class="fa-solid fa-phone"></i> +54 380 4989844
             </p>
           </div>
-          <div class="contact__map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.7669778056297!2d-66.86112588508749!3d-29.40637208211894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427dbb2553735d1%3A0x5c18f17bfd40930a!2sBelgrano%20600%2C%20La%20Rioja!5e0!3m2!1ses-419!2sar!4v1661391501615!5m2!1ses-419!2sar"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+   
           </div>
         </div>
       </section>
