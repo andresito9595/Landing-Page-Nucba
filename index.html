@@ -38,45 +38,54 @@
     ></script>
   </head>
   <body>
-    <header>
-      <div class="header">
-        <img src="./Img/26e9.png" alt="" class="header__img" />
-        <h1 class="hero__title">Aprende Japones</h1>
+    <header class="header">
+      <a href="index.html"
+        ><img src="./Img/26e9.png" alt="" class="header__img" />
+      </a>
+      <h1 class="hero__title">Aprende Japones</h1>
+
+      <div class="nav-container">
+        <nav class="hidden-nav">
+          <label for="menu-toggle">
+            <div class="hidden-nav__div"><i class="fa-solid fa-bars"></i></div>
+          </label>
+          <input type="checkbox" id="menu-toggle" class="nav__menu-toggle" />
+
+          <ul class="hidden-nav__links">
+            <li class="hidden-nav__item-li">
+              <a href="#Inicio" class="hidden-nav__item">INICIO</a>
+            </li>
+            <li class="hidden-nav__item-li">
+              <a href="#DOWNLOAD BOOKS" class="hidden-nav__item"
+                >DOWNLOAD BOOKS</a
+              >
+            </li>
+
+            <li class="hidden-nav__item-li">
+              <a href="#ABOUT" class="hidden-nav__item">ABOUT</a>
+            </li>
+            <li class="hidden-nav__item-li">
+              <a href="#CONTACT_US" class="hidden-nav__item">REDES SOCIALES</a>
+            </li>
+
+            <li class="hidden-nav__item-li">
+              <a
+                class="hidden-nav__item hidden-nav__item--intro"
+                href="./register.html"
+                >Register</a
+              >
+            </li>
+            <li class="hidden-nav__item-li">
+              <a
+                class="hidden-nav__item hidden-nav__item--intro"
+                href="./login.html"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <nav class="hidden-nav">
-      <label for="menu-toggle">
-        <div class="hidden-nav__div"><i class="fa-solid fa-bars"></i></div>
-      </label>
-      <input type="checkbox" id="menu-toggle" class="nav__menu-toggle" />
-      <ul class="hidden-nav__links">
-        <li><a href="#Inicio" class="hidden-nav__item">INICIO</a></li>
-        <li>
-          <a href="#DOWNLOAD BOOKS" class="hidden-nav__item">DOWNLOAD BOOKS</a>
-        </li>
-
-        <li><a href="#ABOUT" class="hidden-nav__item">ABOUT</a></li>
-        <li>
-          <a href="#CONTACT_US" class="hidden-nav__item">REDES SOCIALES</a>
-        </li>
-
-        <li>
-          <a
-            class="hidden-nav__item hidden-nav__item--intro"
-            href="./register.html"
-            >Register</a
-          >
-        </li>
-        <li>
-          <a
-            class="hidden-nav__item hidden-nav__item--intro"
-            href="./login.html"
-            >Login</a
-          >
-        </li>
-      </ul>
-      <div class="nav__links-container"></div>
-    </nav>
 
     <nav class="nav">
       <ul class="nav__links">
