@@ -79,6 +79,7 @@ body {
   display: flex;
   width: 60%;
   justify-content: space-evenly;
+  z-index: 1;
 }
 
 .nav__link {
