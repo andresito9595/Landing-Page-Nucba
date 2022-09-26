@@ -110,7 +110,7 @@ body {
   position: fixed;
   top: -200px;
   left: -500px;
-
+  z-index: 1;
   box-shadow: #681324a9 0px 2px 2px 2px;
 }
 
