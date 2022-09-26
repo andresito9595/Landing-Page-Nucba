@@ -68,6 +68,7 @@ body {
   background-color: transparent;
   border: rgb(255, 255, 255);
   padding: 12px;
+  z-index: 10;
 }
 .fa-solid {
   font-size: 40px;
@@ -163,6 +164,7 @@ main {
 }
 .hero__parrafo {
   text-align: center;
+  font-weight: 600;
 }
 .hero__img {
   height: 250px;
