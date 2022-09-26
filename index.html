@@ -42,9 +42,11 @@
       <a href="index.html"
         ><img src="./Img/26e9.png" alt="" class="header__img" />
       </a>
-      <h1 class="hero__title">Aprende Japones</h1>
+      <h1 class="header__title">Aprende Japones</h1>
 
-      <div class="nav-container">
+      <!-- NAVBAR BURGUER MOBILE ----------------->
+
+      <div class="hidden-nav-container">
         <nav class="hidden-nav">
           <label for="menu-toggle">
             <div class="hidden-nav__div"><i class="fa-solid fa-bars"></i></div>
@@ -62,7 +64,7 @@
             </li>
 
             <li class="hidden-nav__item-li">
-              <a href="#ABOUT" class="hidden-nav__item">ABOUT</a>
+              <a href="galeria.html" class="hidden-nav__item">GALERIA IMG</a>
             </li>
             <li class="hidden-nav__item-li">
               <a href="#CONTACT_US" class="hidden-nav__item">REDES SOCIALES</a>
@@ -87,6 +89,8 @@
       </div>
     </header>
 
+    <!----------- NAVBAR DESKTOP -------------->
+
     <nav class="nav">
       <ul class="nav__links">
         <li><a href="#Inicio" class="nav__item">INICIO</a></li>
@@ -94,8 +98,17 @@
           <a href="#DOWNLOAD BOOKS" class="nav__item">DOWNLOAD BOOKS</a>
         </li>
 
-        <li><a href="#ABOUT" class="nav__item">ABOUT</a></li>
+        <li><a href="galeria.html" class="nav__item">JAPON HD PHOTOS</a></li>
+
         <li><a href="#CONTACT_US" class="nav__item">REDES SOCIALES</a></li>
+        <li class="hidden-nav__item-li">
+          <a class="nav__item nav__item--intro" href="./register.html"
+            >Register</a
+          >
+        </li>
+        <li class="hidden-nav__item-li">
+          <a class="nav__item nav__item--intro" href="./login.html">Login</a>
+        </li>
       </ul>
     </nav>
 
@@ -103,12 +116,15 @@
       <section class="hero">
         <div class="hero__container-portada">
           <div class="hero__portada">
+            <h2 class="hero__title">NO PIERDAS MAS TIEMPO !</h2>
             <p class="hero__parrafo">
               Descarga nuestros libros disponibles para aprender de una manera
               facil y didactica.
             </p>
             <div class="hero__links-btn">
-              <a class="hero__btn hero__btn--color" href="#">Download Books</a>
+              <a class="hero__btn hero__btn--color" href="#DOWNLOAD_BOOKS"
+                >Download Books</a
+              >
               <a class="hero__btn" href="#">Japanese Level Test</a>
             </div>
           </div>
@@ -122,14 +138,13 @@
       </section>
       <section class="cards" id="BOOKS">
         <div class="cards__container-texto">
-          <h2 class="cards__h2">NO PIERDAS MAS TIEMPO !</h2>
           <h4 class="cards__parrafo">
             Les traigo estos libros tan dificiles de conseguir por internet,
             esenciales para Autodidactas que quieren aprender Japones...
           </h4>
         </div>
         <div class="descarga--container">
-          <h2 class="descarga__title" id="DOWNLOAD BOOKS">DESCARGAS</h2>
+          <h2 class="descarga__title" id="DOWNLOAD_BOOKS">DESCARGAS</h2>
 
           <div class="descarga__img--container">
             <img class="descarga__img" src="Img/arrow.svg" alt="" />
